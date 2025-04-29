@@ -1,0 +1,229 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Sorts+Mill+Goudy:ital@0;1&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+  /* 1 rem=10px */
+}
+
+.navbar ul li a {
+  text-decoration: none;
+  color: black;
+  font-size: 1.6rem;
+  font-family: "Exo 2", sans-serif;
+  font-weight: 500;
+} 
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  padding: 2% 4%;
+  
+}
+
+.navbar ul {
+  padding-top: 3rem;
+}
+
+.navbar img {
+  width: 15rem;
+}
+
+.navbar ul li {
+  list-style-type: none;
+  display: inline-block;
+  padding-right: 3rem;
+}
+
+.navbar ul li a::after {
+  content: "";
+    background-color: #067ce3;
+  width: 0;
+  height: 2px;
+  display: block;
+  margin: auto;
+  transition: 0.5s;
+}
+
+.navbar ul li a:hover::after {
+  width: 100%;
+}
+
+/* NAVBAR END */
+
+/* ALAN START */
+
+.map {
+  padding-left: 100px;
+}
+
+.text a{
+  text-decoration: none;
+  color: black;
+}
+
+.alan {
+  display: flex;
+  font-family: "Poppins", sans-serif;
+  min-height: 78vh;
+}
+
+.text h2 {
+  padding-left: 5rem;
+  padding-top: 3rem;
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.text h1 {
+  padding-left: 28rem;
+  font-size: 2.6rem;
+  font-weight: 600;
+}
+
+.text p {
+  font-size: 1.8rem;
+  padding: 1.4rem 10rem;
+  display: inline-block;
+}
+
+.etkisiz {
+  color: #676e7c;
+  font-size: 1.8rem;
+}
+
+.tel {
+  text-decoration-line: grammar-error;
+  cursor: pointer;
+  padding-left: 2rem;
+  text-decoration-color: red;
+}
+
+#teli {
+  padding-top: 2.1rem;
+  position: absolute;
+  left: 77.3rem;
+  font-size: 1.8rem;
+}
+
+#telp {
+  position: absolute;
+  padding-top: 7.5rem;
+  left: 77.3rem;
+  font-size: 1.8rem;
+}
+
+#imap {
+  position: absolute;
+  font-size: 2.2rem;
+  left: 75.8rem;
+  padding-top: 2rem;
+}
+
+hr {
+  width: 74rem;
+  margin-left: 5rem;
+  margin-top: 1rem;
+  border-style: outset;
+  border-width: 0.1rem;
+}
+
+/* ALAN END */
+
+/* FOOTER START */
+
+.footer {
+  background-color: black;
+  min-height: 38vh;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  background-position: center;
+}
+
+.box {
+  color: white;
+  margin-top: 5rem;
+}
+
+#box1 {
+  margin-left: 6rem;
+}
+
+#box1 p a{
+  color: #7f8c8d;
+  text-decoration: none;
+  font-size: 1.7rem;
+}
+
+#box2{
+  padding-left: 2rem;
+}
+
+#box4 {
+  margin-right: 3rem;
+}
+
+.alt-baslik {
+  margin-top: 2rem;
+  margin-left: 1rem;
+}
+
+
+.alt-baslik p {
+  font-size: 1.7rem;
+  padding-bottom: 1rem;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  color: #7f8c8d;
+}
+
+.baslik h1 {
+  font-size: 2.6rem;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  display: inline-block;
+}
+
+.baslik h1::after {
+  content: "";
+  width: 100%;
+  height: 1px;
+  background-color: #0f4c81;
+  display: block;
+  margin-top: 0.5rem;
+}
+
+.cevap{
+  padding-left: 1.3rem;
+}
+
+#cevap3{
+  padding-left: 2.1rem;
+}
+
+#cevap4{
+  padding-left: 3rem;
+}
+
+#box1 .baslik .alt-baslik p{
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+
+#box1 p a:hover{
+  color: white;
+  transition: 0.5s;
+}
+
+#box2 p a{
+  color: #7f8c8d;
+  text-decoration: none;
+}
+
+/* FOOTER END */

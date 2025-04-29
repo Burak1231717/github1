@@ -1,0 +1,208 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Sorts+Mill+Goudy:ital@0;1&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Sorts+Mill+Goudy:ital@0;1&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Quicksand:wght@300..700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+.navbar img {
+  width: 15rem;
+}
+
+.container {
+}
+
+/* NAVBAR START */
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  padding: 2% 4%;
+}
+
+.navbar ul li a {
+  text-decoration: none;
+  color: black;
+  font-weight: 500;
+  font-size: 1.6rem;
+  font-family: "Exo 2", sans-serif;
+}
+
+.navbar ul {
+  padding-top: 3rem;
+}
+
+.navbar ul li {
+  display: inline-block;
+  list-style-type: none;
+  padding-right: 3rem;
+}
+
+.navbar ul li a::after {
+  content: "";
+  display: block;
+  background-color: #067ce3;
+  width: 0;
+  height: 2px;
+  margin: auto;
+}
+
+.navbar ul li a:hover::after {
+  width: 100%;
+  transition: 0.5s;
+}
+
+/* NAVBAR END */
+
+/* PROJELER START */
+
+.projeler {
+  display: flex;
+  gap: 8rem;
+  margin: 4rem 8rem;
+}
+
+.proje {
+  width: 40rem;
+  height: 35rem;
+  overflow: hidden;
+  position: relative;
+  cursor: pointer;
+}
+
+.proje-bg {
+  position: absolute;
+  inset: 0;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  filter: 100%;
+  transition: transform 0.6s ease, filter 0.6s ease;
+  z-index: 0;
+}
+
+.proje:hover .proje-bg {
+  transform: scale(1.2);
+}
+
+.proje-overlay {
+  position: absolute;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.75);
+  opacity: 0;
+  z-index: 1;
+  transition: opacity 0.6s ease;
+}
+
+.proje:hover .proje-overlay {
+  opacity: 1;
+}
+
+.proje-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  color: white;
+  transition: opacity 1.5s ease;
+  z-index: 2;
+  font-family: "Arial", sans-serif;
+  font-size: 1.2rem;
+}
+
+.proje:hover .proje-text {
+  opacity: 1;
+}
+
+.proje-baslik {
+  padding-left: 9rem;
+  font-family: "Sorts Mill Goudy", serif;
+  font-weight: 400;
+  font-size: 1.8rem;
+  color: #252525;
+  text-align: center;
+  letter-spacing: 0.3em;
+}
+
+/* PROJE END */
+
+/* FOOTER START */
+
+.boxlar {
+  display: flex;
+  justify-content: space-between;
+  background-color: black;
+  padding: 3% 3%;
+}
+
+.box p {
+  color: #7f8c8d;
+  font-size: 1.7rem;
+  padding-bottom: 1rem;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+.box h1 {
+  color: white;
+  font-size: 2.6rem;
+  display: inline-block;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.box p a {
+  color: #7f8c8d;
+  text-decoration: none;
+  font-size: 1.7rem;
+  transition: 0.5s;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+
+.alt-baslik {
+  padding-top: 1.8rem;
+  padding-left: 1rem;
+}
+
+.box h1::after {
+  content: "";
+  background-color: #0f4c81;
+  display: block;
+  height: 1px;
+  width: 100%;
+  margin-top: 0.5rem;
+}
+
+.box p a:hover {
+  color: white;
+}
+
+#span1 {
+  padding-left: 1rem;
+}
+
+#span2 {
+  padding-left: 1rem;
+}
+
+#span3 {
+  padding-left: 1.8rem;
+}
+
+#span4 {
+  padding-left: 2.6rem;
+}
+
+#span5 {
+  padding-left: 1rem;
+}
